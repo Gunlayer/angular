@@ -1,0 +1,26 @@
+.user {
+  padding: 1rem;
+  width: 400px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 0.5fr 2fr 0fr;
+  gap: 0px 5px;
+
+  p {
+    margin: 0;
+  }
+}
+.created {
+  display: flex;
+  align-items: flex-end;
+}
+.user-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+img {
+  border-radius: 50%;
+}

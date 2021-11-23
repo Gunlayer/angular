@@ -1,1 +1,6 @@
 <h1>Wellcome to home page</h1>
+<h2 *ngIf="users.length > 0; else noCards">User Cards</h2>
+<div class="users">
+  <app-user *ngFor="let item of users" [user]="item"></app-user>
+</div>
+<ng-template #noCards> </ng-template>

@@ -1,1 +1,32 @@
-<h1>ReactForm Component</h1>
+<h1>Reactive Form Component</h1>
+<div class="reactive-form">
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <label for="name">Name: </label>
+    <input
+      id="name"
+      [ngClass]="{ red: errorName === true }"
+      type="text"
+      formControlName="name"
+    />
+
+    <label for="age">Age: </label>
+    <input
+      id="age"
+      [ngClass]="{ red: errorAge === true }"
+      type="number"
+      formControlName="age"
+    />
+
+    <label for="email">E-mail: </label>
+    <input
+      id="email"
+      type="email"
+      [ngClass]="{ red: errorEmail === true }"
+      formControlName="email"
+    />
+
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+<!-- [disabled]="!profileForm.valid" -->

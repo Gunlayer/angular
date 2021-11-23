@@ -1,0 +1,14 @@
+<div class="user">
+  <div class="image-container">
+    <img
+      src="https://eu.ui-avatars.com/api/?name={{ user.name }}"
+      alt="avatar"
+    />
+  </div>
+  <div class="user-data">
+    <p><strong>E-mail:</strong> {{ user.email }}</p>
+    <p><strong>Name:</strong> {{ user.name }}</p>
+    <p><strong>Age:</strong> {{ user.age }}</p>
+  </div>
+  <p class="created">{{ date | date: "dd.MM.yyy" }}</p>
+</div>
